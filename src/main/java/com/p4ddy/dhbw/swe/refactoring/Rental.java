@@ -1,7 +1,7 @@
 package com.p4ddy.dhbw.swe.refactoring;
 
 class Rental {
-    Movie movie;
+    private Movie movie;
     private int daysRented;
 
     public Rental(Movie movie, int daysRented) {

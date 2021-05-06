@@ -2,13 +2,13 @@ package com.p4ddy.dhbw.swe.refactoring;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MovieTest {
-    final String MOVIETITLE = "Back To The Future 2";
-    final int PRICECODE = 2;
+    private final String MOVIETITLE = "Back To The Future 2";
+    private final int PRICECODE = 2;
 
-    Movie movie;
+    private Movie movie;
 
     @BeforeEach
     void setUp() {

@@ -2,23 +2,23 @@ package com.p4ddy.dhbw.swe.refactoring;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
 
 class CustomerTest {
-    final String CUSTOMERNAME = "Uschi Rosenbusch";
-    final String MOVIETITLE = "Back To The Future";
-    final String MOVIETITLE2 = "Back To The Future 2";
-    final int PRICECODE = 2;
-    final int PRICECODE2 = 0;
-    final int RENTALDAYS = 69;
-    final int RENTALDAYS2 = 420;
+    private final String CUSTOMERNAME = "Uschi Rosenbusch";
+    private final String MOVIETITLE = "Back To The Future";
+    private final String MOVIETITLE2 = "Back To The Future 2";
+    private final int PRICECODE = 2;
+    private final int PRICECODE2 = 0;
+    private final int RENTALDAYS = 69;
+    private final int RENTALDAYS2 = 420;
 
-    Movie movie;
-    Movie movie2;
-    Rental rental;
-    Rental rental2;
-    Customer customer;
+    private Movie movie;
+    private Movie movie2;
+    private Rental rental;
+    private Rental rental2;
+    private Customer customer;
 
     @BeforeEach
     void setUp() {
@@ -31,7 +31,11 @@ class CustomerTest {
 
     @Test
     void addRental() {
-        customer.addRental(rental);
+        try {
+            customer.addRental(rental);
+        } catch (Exception e) {
+            fail();
+        }
     }
 
     @Test

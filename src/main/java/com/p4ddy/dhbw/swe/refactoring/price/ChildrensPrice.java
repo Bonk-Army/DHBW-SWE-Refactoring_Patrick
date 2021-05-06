@@ -1,4 +1,4 @@
-package com.p4ddy.dhbw.swe.refactoring.Price;
+package com.p4ddy.dhbw.swe.refactoring.price;
 
 import com.p4ddy.dhbw.swe.refactoring.Movie;
 

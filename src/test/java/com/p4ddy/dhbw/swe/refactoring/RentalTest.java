@@ -2,15 +2,15 @@ package com.p4ddy.dhbw.swe.refactoring;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class RentalTest {
-    final String MOVIETITLE = "Back To The Future 2";
-    final int PRICECODE = 2;
-    final int RENTALDAYS = 69;
+    private final String MOVIETITLE = "Back To The Future 2";
+    private final int PRICECODE = 2;
+    private final int RENTALDAYS = 69;
 
-    Movie movie;
-    Rental rental;
+    private Movie movie;
+    private Rental rental;
 
     @BeforeEach
     void setUp() {
