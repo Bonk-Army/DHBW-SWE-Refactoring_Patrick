@@ -1,3 +1,4 @@
+package com.p4ddy.dhbw.swe.refactoring;
 
 import java.lang.*;
 import java.util.*;
@@ -62,4 +63,3 @@ class Customer {
     }
 
 }
-    
