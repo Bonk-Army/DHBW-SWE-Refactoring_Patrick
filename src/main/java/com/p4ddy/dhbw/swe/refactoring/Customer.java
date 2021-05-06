@@ -30,7 +30,7 @@ class Customer {
             double currentAmount = 0;
             Rental currentRental = (Rental) rentalsEnum.nextElement();
             //determine amounts for each line
-            currentAmount = amountFor(currentRental);
+            currentAmount = currentRental.getCharge();
             // add frequent renter points
             frequentRenterPoints++;
             // add bonus for a two day new release rental
@@ -45,25 +45,4 @@ class Customer {
         resultStatement += "You earned " + String.valueOf(frequentRenterPoints) + " frequent renter points";
         return resultStatement;
     }
-
-    private double amountFor(Rental currentRental) {
-        double result = 0;
-        switch (currentRental.getMovie().getPriceCode()) {
-            case Movie.REGULAR:
-                result += 2;
-                if (currentRental.getDaysRented() > 2)
-                    result += (currentRental.getDaysRented() - 2) * 1.5;
-                break;
-            case Movie.NEW_RELEASE:
-                result += currentRental.getDaysRented() * 3;
-                break;
-            case Movie.CHILDRENS:
-                result += 1.5;
-                if (currentRental.getDaysRented() > 3)
-                    result += (currentRental.getDaysRented() - 3) * 1.5;
-                break;
-        }
-        return result;
-    }
-
 }
