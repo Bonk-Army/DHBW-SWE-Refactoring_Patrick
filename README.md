@@ -1,0 +1,1 @@
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a390516d5c5642daaa8b9ec0f48efa4d)](https://www.codacy.com/gh/Mueller-Patrick/DHBW-SWE-Refactoring/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Mueller-Patrick/DHBW-SWE-Refactoring&amp;utm_campaign=Badge_Grade)
